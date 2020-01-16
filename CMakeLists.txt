@@ -15,3 +15,6 @@ target_include_directories(fork_file_sharing PRIVATE lib)
 
 add_executable(seek_io procexec/seek_io.c ${LIB_FILES})
 target_include_directories(seek_io PRIVATE lib)
+
+# TODO: De-duplicate declarations
+# https://stackoverflow.com/questions/14306642/adding-multiple-executables-in-cmake
