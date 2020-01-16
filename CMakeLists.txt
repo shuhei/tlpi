@@ -12,3 +12,6 @@ target_include_directories(t_fork PRIVATE lib)
 
 add_executable(fork_file_sharing procexec/fork_file_sharing.c ${LIB_FILES})
 target_include_directories(fork_file_sharing PRIVATE lib)
+
+add_executable(seek_io procexec/seek_io.c ${LIB_FILES})
+target_include_directories(seek_io PRIVATE lib)
