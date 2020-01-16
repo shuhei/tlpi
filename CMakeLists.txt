@@ -9,3 +9,6 @@ target_include_directories(copy PRIVATE lib)
 
 add_executable(t_fork procexec/t_fork.c ${LIB_FILES})
 target_include_directories(t_fork PRIVATE lib)
+
+add_executable(fork_file_sharing procexec/fork_file_sharing.c ${LIB_FILES})
+target_include_directories(fork_file_sharing PRIVATE lib)
